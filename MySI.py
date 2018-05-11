@@ -110,7 +110,7 @@ class SpeakerIdentification():
         self.speaker_ids[speaker] = self.create_profile(subscription_key, 'en-us')
         self.save_speaker()
         audio_path = "dataset\\enroll\\" + speaker + ".wav"
-        self.enroll_profile(subscription_key, speaker_ids[speaker], audio_path, "True")
+        self.enroll_profile(subscription_key, self.speaker_ids[speaker], audio_path, "True")
 
     
     def identify(self):

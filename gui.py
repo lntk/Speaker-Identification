@@ -124,7 +124,7 @@ Builder.load_string("""
 
 <ListSpeakers>:
     orientation: 'vertical'
-    size_hint: .5, .5
+    size_hint: .5, .9
     auto_dismiss: False
     title: "List of speakers"
     BoxLayout:
@@ -132,7 +132,7 @@ Builder.load_string("""
         Label:
             text: root.list_speakers_string
         Button:
-            size_hint: 1, 1
+            size_hint: 1, .5
             text: "Done"
             on_press:
                 root.back_to_main_screen()
