@@ -5,7 +5,7 @@ import numpy as np
 import utils
 
 
-subscription_key = "0e5a3e2ee0a1469894ae929e67bd6143"
+subscription_key = "972f179aba814427a43c9806937e61e6"
 # speaker_ids = {'khang':'9bfcfd68-b15f-48f9-ba1a-67187aa5ea45', 
 #                 'duy':'1d5bde59-5384-412b-bbd3-39fbc287e6f3',
 #                 'dat':'d6b97999-d2b6-435a-bdeb-637cb1576ab0',

@@ -352,7 +352,12 @@ class TestPlayerScreen(Screen):
 
     def __init__(self, *args, **kwargs):
         super(TestPlayerScreen, self).__init__(*args, **kwargs)
-        self.list_test_speaker = ['khang', 'hung', 'quy', 'son', 'nhan']
+        test_speakers = ['khang', 'hung', 'quy', 'son', 'nhan']
+        available_speakers = si.speaker_ids.keys()
+        self.list_test_speaker = []
+        for speaker in test_speakers:
+            if speaker in available_speakers:
+                self.list_test_speaker.append(speaker)
         self.num_test = 3
         random_index = np.random.randint(len(self.list_test_speaker))
         self.speaker_name = self.list_test_speaker[random_index]
